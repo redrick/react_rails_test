@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { PageHeader } from 'react-bootstrap';
 import QuotesList from './QuotesList'
 
 class App extends Component {
@@ -31,7 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <PageHeader>Somewhat famous quotes here!</PageHeader>
+          <h1>Somewhat famous quotes here!</h1>
         </div>
         <QuotesList quotes={this.state.quotes} />
       </div>

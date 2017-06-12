@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Table } from 'react-bootstrap';
 
 class QuotesList extends Component {
   render () {
-    console.log(this.props)
     var quotes = this.props.quotes.map(function(quote, index) {
       return (
         <tr key={index}>
@@ -13,11 +11,11 @@ class QuotesList extends Component {
       )
     })
     return (
-      <Table striped bordered condensed hover>
+      <table className='table table-striped table-bordered table-condensed table-hover'>
         <tbody>
           {quotes}
         </tbody>
-      </Table>
+      </table>
     )
   }
 }
